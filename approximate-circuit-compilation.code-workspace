@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "approximate-circuit-compilation",
+			"path": "."
+		},
+		{
+			"name": "UAI_2022",
+			"path": "../../../Desktop/PCs/UAI_2022"
+		},
+		{
+			"name": "UAI_2014",
+			"path": "../../../Desktop/PCs/UAI_2014"
+		}
+	],
+	"settings": {}
+}
