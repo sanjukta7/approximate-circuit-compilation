@@ -1,6 +1,6 @@
 # approximate-circuit-compilation
 
-UAI-2014 Files structure: 
+UAI-2014 Files structure: \\ 
 <Preamble> 
 <Function-Table> 
 
