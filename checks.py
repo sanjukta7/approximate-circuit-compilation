@@ -1,9 +1,13 @@
+import sys 
+sys.path.append("/Users/sanjukta/Documents/Github")
+
 # all imports for the CP decomposition and basic structuring. 
 import numpy as np
 import tensorly as tl
 from tensorly.decomposition import parafac
 
 import cirkit 
+from cirkit.layers import InputLayer 
 
 # setup the weight matrices: 
 A = np.array([[0,1,3],[4,5,63],[6,7,8],[2,3,5]])
@@ -26,5 +30,7 @@ for factors in factorsb:
 Ia = np.array([0,0,1,0])
 Ib = np.array([0,1,0,0])
 # - more input matrices are yet to be initialised here. 
+
+
 
 
