@@ -60,3 +60,5 @@ print("Factor matrices:")
 for factor in factors:
     print(factor)
     print(len(factor))
+
+

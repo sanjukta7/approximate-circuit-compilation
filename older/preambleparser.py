@@ -1,4 +1,7 @@
 import numpy as np
+from readfiles import readfile
+
+a = readfile("/Users/sanjukta/Documents/GitHub/approximate-circuit-compilation/benchmarksUAI/examples/objectdetection_320.uai")
 
 
 def stv(vec, sep):
@@ -13,33 +16,20 @@ def preamble(a):
     card = a[2]
     card = stv(card, " ")
     cardtemp = []
-
+    cardinality = []
     num_factors = int(a[3])
-
     for i in range(4, 4+num_factors):
-        print(a[i])
+        #print(a[i])
         temp = stv(a[i]," ")
         cardtemp.append(temp)
-
-    #print(preamble(a))
-    #num_vars, num_funcs, card = preamble(a)
-
-    #print(type(card))
-    cardinality = []
     for i in range(len(cardtemp)):
         temp = cardtemp[i]
-        #print(temp)
-        #print(type(temp))
         cardinality.append([])
-        #print(cardinality[i])
         for j in range(1,len(temp)):
-            #this is already an integer 
-            #print(temp[j])
             tempcard = card[temp[j]]
             cardinality[i].append(tempcard)
-            #print(tempcard)
-        #print(cardinality)
+            #print(len(temp))
+            if (len(temp) == 2):
+                cardinality[i].append(1)
     return (cardinality)
-
-#print(preamble(a))
 
